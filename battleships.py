@@ -14,8 +14,8 @@ YELLOW = (255, 255, 0)
 
 FPS = 60
 
-HEALTH_FONT = pygame.font.SysFont('ariel', 40)
-WINNER_FONT = pygame.font.SysFont('ariel', 100)
+HEALTH_FONT = pygame.font.Font('Assets/induction.ttf', 17)
+WINNER_FONT = pygame.font.Font('Assets/induction.ttf', 40)
 
 BORDER = pygame.Rect(WIDTH/2-5, 0, 10, HEIGHT)
 
@@ -37,7 +37,7 @@ RED_SPACE_SHIP_IMAGE = pygame.image.load(os.path.join('Assets', 'spaceship_red.p
 RED_SPACE_SHIP_IMAGE = pygame.transform.scale (RED_SPACE_SHIP_IMAGE, (SPACE_SHIP_WIDTH,SPACE_SHIP_HEIGHT))
 RED_SPACE_SHIP_IMAGE = pygame.transform.rotate (RED_SPACE_SHIP_IMAGE, 270 )
 
-BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'space.png')), (WIDTH, HEIGHT ))
+BACKGROUND = pygame.transform.scale(pygame.image.load(os.path.join('Assets', 'stars_space.jpg')), (WIDTH, HEIGHT ))
 
 FIRE = pygame.mixer.Sound(os.path.join('Assets', "Gun+Silencer.mp3"))
 CRASH = pygame.mixer.Sound(os.path.join('Assets', "Grenade+1.mp3"))
